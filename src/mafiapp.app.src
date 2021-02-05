@@ -1,0 +1,16 @@
+{application, mafiapp,
+ [{description, "Help the boss keep track of his friends"},
+  {vsn, "1.0.0"},
+  {registered, []},
+  {mod, {mafiapp_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    mnesia
+   ]},
+  {env,[]},
+  {modules, [mafiapp_app, mafiapp_sup]},
+
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
